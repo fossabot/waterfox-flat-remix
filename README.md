@@ -1,11 +1,13 @@
-![Screenshot of the theme](images/preview.png)
+![no-tab](images/no-tab.png)
+![some-tabs](images/some-tabs.png)
 
 ## Description
 
-A dark and modern theme for firefox
+A dark and modern theme for Waterfox
 
-This theme is supposed to work with current supported Firefox releases:
+This theme is supposed to work with current supported Waterfox/Firefox releases:
 
+- Waterfox current
 - Firefox 68.0
 - Firefox 68 ESR
 - Firefox 60 ESR
@@ -22,7 +24,7 @@ This theme is supposed to work with current supported Firefox releases:
 
 ### Installation script
 ```sh
-git clone https://github.com/EliverLara/firefox-sweet-theme && cd firefox-sweet-theme
+git clone https://github.com/rauldipeas/waterfox-flat-remix && cd waterfox-flat-remix
 ./scripts/install.sh
 ```
 
@@ -40,7 +42,7 @@ git clone https://github.com/EliverLara/firefox-sweet-theme && cd firefox-sweet-
 
 
 ### Manual installation
-1. Go to `about:support` in Firefox.
+1. Go to `about:support` in Waterfox.
 
 2. Application Basics > Profile Directory > Open Directory.
 
@@ -56,7 +58,7 @@ git clone https://github.com/EliverLara/firefox-sweet-theme && cd firefox-sweet-
 5. Clone this repo to a subdirectory:
 
 	```sh
-	git clone https://github.com/EliverLara/firefox-sweet-theme.git
+	git clone https://github.com/rauldipeas/waterfox-flat-remix.git
 	```
 
 6. Create single-line user CSS files if non-existent or empty (at least one line is needed for `sed`):
@@ -68,31 +70,31 @@ git clone https://github.com/EliverLara/firefox-sweet-theme && cd firefox-sweet-
 7. Import this theme at the beginning of the CSS files (all `@import`s must come before any existing `@namespace` declarations):
 
 	```sh
-	sed -i '1s/^/@import "firefox-sweet-theme\/userChrome.css";\n/' userChrome.css
+	sed -i '1s/^/@import "waterfox-flat-remix\/userChrome.css";\n/' userChrome.css
 	```
 
 8. Symlink preferences file:
 
 	```sh
-	ln -s chrome/firefox-sweet-theme/configuration/user.js ../user.js
+	ln -s chrome/waterfox-flat-remix/configuration/user.js ../user.js
 	```
 
-9. Restart Firefox.
+9. Restart Waterfox.
 
-10. Open Firefox customization panel and move the new tab button to headerbar.
+10. Open Waterfox customization panel and move the new tab button to headerbar.
 
-11. Be happy with your new vibrant Firefox.
+11. Be happy with your new vibrant Waterfox.
 
 
 ## Uninstalling
 
-1. Go to your firefox profile folder. (Go to about:support in Firefox > Application Basics > Profile Directory > Open Directory)
+1. Go to your Waterfox profile folder. (Go to about:support in Waterfox > Application Basics > Profile Directory > Open Directory)
 
 2. Remove the `chrome` folder.
 
 
 ## Enabling optional features
-Open `chrome/firefox-sweet-theme/userChrome.css` with a text editor and follow instructions to enable extra features. Keep in mind this file might change in future versions and your configuration will be lost. You can copy the @imports you want to enable to a new file named `customChrome.css` directly in your `chrome/firefox-sweet-theme` directory if you want it to survive updates. Remember all @imports must be at the top of the file, before other statements.
+Open `chrome/waterfox-flat-remix/userChrome.css` with a text editor and follow instructions to enable extra features. Keep in mind this file might change in future versions and your configuration will be lost. You can copy the @imports you want to enable to a new file named `customChrome.css` directly in your `chrome/waterfox-flat-remix` directory if you want it to survive updates. Remember all @imports must be at the top of the file, before other statements.
 
 Alternatively you can run installation script with `-g` flag to auto install GNOMISH features.
 
@@ -100,7 +102,7 @@ Alternatively you can run installation script with `-g` flag to auto install GNO
 ./scripts/install.sh -g
 ```
 
-*Those features are not included by default, because can introduce bugs or Firefox functionalities lost.*
+*Those features are not included by default, because can introduce bugs or Waterfox functionalities lost.*
 
 - **hide-single-tab.css** *GNOMISH*
 
@@ -154,4 +156,4 @@ Feel free to use any parts of my code to develop your own themes, I don't force
 any specific license on your code.
 
 ## Credits
-Based on the awesome [gnome theme](https://github.com/rafaelmardojai/firefox-gnome-theme) by **[Rafael Mardojai CM](https://github.com/rafaelmardojai)**
+Based on the awesome [sweet theme](https://github.com/EliverLara/firefox-sweet-theme) by **[Eliver L.](https://github.com/EliverLara)**
