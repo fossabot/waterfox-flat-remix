@@ -1,14 +1,14 @@
 #!/bin/bash
 
 THEMEDIRECTORY=$(cd `dirname $0` && cd .. && pwd)
-FIREFOXFOLDER=~/.mozilla/firefox/
+WATERFOXFOLDER=~/.waterfox/
 PROFILENAME=""
 GNOMISHEXTRAS=false
 
 # Get options.
 while getopts 'f:p:g' flag; do
 	case "${flag}" in    
-		f) FIREFOXFOLDER="${OPTARG}" ;;
+		f) WATERFOXFOLDER="${OPTARG}" ;;
 		p) PROFILENAME="${OPTARG}" ;;
 		g) GNOMISHEXTRAS=true ;;
 	esac
@@ -17,12 +17,12 @@ done
 # Define profile folder path.
 if test -z "$PROFILENAME" 
 	then
-		PROFILEFOLDER="$FIREFOXFOLDER/*.default"
+		PROFILEFOLDER="$WATERFOXFOLDER/*.default"
 	else
-		PROFILEFOLDER="$FIREFOXFOLDER/$PROFILENAME"
+		PROFILEFOLDER="$WATERFOXFOLDER/$PROFILENAME"
 fi
 
-# Enter Firefox profile folder.
+# Enter Waterfox profile folder.
 cd $PROFILEFOLDER
 echo "Installing theme in $PWD"
 
@@ -38,18 +38,18 @@ cp -R $THEMEDIRECTORY $PWD
 [[ -s userChrome.css ]] || echo >> userChrome.css
 
 # Import this theme at the beginning of the CSS files.
-sed -i '1s/^/@import "firefox-sweet-theme\/userChrome.css";\n/' userChrome.css
+sed -i '1s/^/@import "waterfox-flat-remix\/userChrome.css";\n/' userChrome.css
 
 # If GNOMISH extras enabled, import it in customChrome.css.
 if [ "$GNOMISHEXTRAS" = true ] ; then
 	echo "Enabling GNOMISH extra features"
-    [[ -s customChrome.css ]] || echo >> firefox-sweet-theme/customChrome.css
-	sed -i '1s/^/@import "theme\/hide-single-tab.css";\n/' firefox-sweet-theme/customChrome.css
-	sed -i '2s/^/@import "theme\/matching-autocomplete-width.css";\n/' firefox-sweet-theme/customChrome.css
+    [[ -s customChrome.css ]] || echo >> waterfox-flat-remix/customChrome.css
+	sed -i '1s/^/@import "theme\/hide-single-tab.css";\n/' waterfox-flat-remix/customChrome.css
+	sed -i '2s/^/@import "theme\/matching-autocomplete-width.css";\n/' waterfox-flat-remix/customChrome.css
 fi
 
-# Symlink user.js to firefox-sweet-theme one.
+# Symlink user.js to waterfox-flat-remix one.
 echo "Set configuration user.js file"
-ln -s chrome/firefox-sweet-theme/configuration/user.js ../user.js
+ln -s chrome/waterfox-flat-remix/configuration/user.js ../user.js
 
 echo "Done."

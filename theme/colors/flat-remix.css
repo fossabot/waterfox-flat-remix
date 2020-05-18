@@ -18,7 +18,7 @@
 
 	/* Sidebar */
 	--sweet-sidebar-background: #000000;
-	--sweet-inactive-sidebar-background: #1b1f22;
+	--sweet-inactive-sidebar-background: #2777FF;
 
 	/* Popups */
 	--sweet-menu-background: #000000;
@@ -26,7 +26,7 @@
 	--sweet-popover-background: #000000;
 	--sweet-popover-border-color: #0f1113;
 	--sweet-popover-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
-	--sweet-popover-button-hover-background: #1b1f22;
+	--sweet-popover-button-hover-background: #2777FF;
 	--sweet-popover-separator-color: rgba(0, 0, 0, 0.1);
 
 	/* Header bar */
@@ -42,8 +42,8 @@
 	--sweet-button-border-color: #000000;
 	--sweet-button-border-accent-color: #000000;	
 	--sweet-button-box-shadow: inset 0 1px rgba(255, 255, 255, 0.02), 0 1px 2px rgba(0, 0, 0, 0.07);	
-	--sweet-button-hover-background: linear-gradient(to top, #1b1f22, #1b1f22 1px);	
-	--sweet-button-active-background: linear-gradient(45deg,#ff005d, #ff8b26);
+	--sweet-button-hover-background: linear-gradient(to top, #2777FF, #2777FF 1px);	
+	--sweet-button-active-background: #2777FF;
 	--sweet-button-active-border-color: #0f1113;
 	--sweet-button-active-border-accent-color: #000000;
 	--sweet-button-active-box-shadow: inset 0 1px rgba(255, 255, 255, 0);	
@@ -94,8 +94,7 @@
 	--sweet-inactive-tabbar-tab-color: rgb(141, 144, 145);
 	--sweet-inactive-tabbar-tab-active-background: #000000;
 	--sweet-inactive-tabbar-tab-active-border-bottom-color: #F67E7D;
-    --sweet-inactive-tabbar-tab-active-color: rgb(141, 144, 145);  
-    
-    --sweet-start-gradient-color: #2777FF;
-    --sweet-end-gradient-color: #2777FF;
+    	--sweet-inactive-tabbar-tab-active-color: rgb(141, 144, 145);      
+    	--sweet-start-gradient-color: #2777FF;
+    	--sweet-end-gradient-color: #2777FF;
 }

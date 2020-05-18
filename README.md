@@ -31,7 +31,7 @@ git clone https://github.com/rauldipeas/waterfox-flat-remix && cd waterfox-flat-
 #### Script options
 - -f `<firefox_folder>` *optional*
 	- Set custom Firefox folder path, for example `~/.mozilla/icecat/`.
-	- Default: `~/.mozilla/firefox/`
+	- Default: `~/.waterfox/`
 
 - -p `<profile_folder>` *optional*
 	- Set custom profile folder name, for example `e0j6yb0p.default-nightly`
