@@ -1,5 +1,6 @@
 ![no-tab](images/no-tab.png)
 ![some-tabs](images/some-tabs.png)
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Frauldipeas%2Fwaterfox-flat-remix.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Frauldipeas%2Fwaterfox-flat-remix?ref=badge_shield)
 
 ## Description
 
@@ -157,3 +158,7 @@ any specific license on your code.
 
 ## Credits
 Based on the awesome [sweet theme](https://github.com/EliverLara/firefox-sweet-theme) by **[Eliver L.](https://github.com/EliverLara)**
+
+
+## License
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Frauldipeas%2Fwaterfox-flat-remix.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Frauldipeas%2Fwaterfox-flat-remix?ref=badge_large)
